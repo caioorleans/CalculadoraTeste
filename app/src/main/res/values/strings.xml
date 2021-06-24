@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name" translatable="false">CalculadoraTeste</string>
+    <string-array name="operacoes_array">
+        <item>Adição</item>
+        <item>Subtração</item>
+        <item>Multiplicação</item>
+        <item>Divisão</item>
+    </string-array>
+</resources>

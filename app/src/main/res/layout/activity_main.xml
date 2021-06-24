@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#337295"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:outlineAmbientShadowColor="#BC6D6D"
+    android:outlineSpotShadowColor="#131313"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:srcCompat="@drawable/icone_calculadora_foreground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="7dp">
+
+        <TextView
+            android:id="@+id/primeiroValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor 1: "
+            android:textColor="#EFEEEE"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextValor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digite o primeiro valor"
+            android:inputType="number|numberDecimal"
+            android:textColor="#80EFEEEE"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="7dp">
+
+        <TextView
+            android:id="@+id/segundoValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor 2: "
+            android:textColor="#EFEEEE"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextValor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Digite o segundo valor"
+            android:inputType="number|numberDecimal"
+            android:textColor="#80EFEEEE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/operacaoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Operação:"
+            android:textColor="#EFEEEE"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/operacaoSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/botaoCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
